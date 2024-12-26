@@ -64,7 +64,7 @@
         <div class="flex w-full gap-x-16 max-xl:gap-x-12">
             <img src="{{ asset('assets/foto1.jpg') }}" class="w-1/4 max-xl:w-2/5 shadow-xl max-lg:hidden">
             <div class="w-3/4 max-lg:w-full">
-                <h1 class="text-3xl font-bold ">Sejarah Panti</h1>
+                <h1 class="text-3xl font-bold ">Sejarah Panti Asuhan Ora Et Labora</h1>
                 <p class="mt-4 tracking-wide leading-relaxed text-justify">
                     {!! $homepage->history !!}
                 </p>
