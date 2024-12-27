@@ -75,7 +75,7 @@
             box-shadow: none;
         }
     </style>
-    @vite('resources/css/app.css')
+    {{-- @vite('resources/css/app.css') --}}
 
     @yield('style')
 </head>
