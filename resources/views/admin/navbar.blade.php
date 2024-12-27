@@ -67,6 +67,11 @@
                             </ul>
                         </div>
                     </li>
+
+                    <li class="my-2 ps-2 lg:my-0 lg:pe-1 lg:ps-2" data-twe-nav-item-ref>
+                        <a class="text-black lg:px-2" aria-current="page" href="{{ route('logout') }}"
+                            data-twe-nav-link-ref>Logout</a>
+                    </li>
                 </ul>
             </div>
         </div>
