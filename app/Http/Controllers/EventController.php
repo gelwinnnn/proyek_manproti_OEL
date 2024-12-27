@@ -20,14 +20,14 @@ class EventController extends Controller
         $valid = Validator::make($request->all(), [
             'name' => 'required',
             'description' => 'required',
-            'image' => 'required|image|max:5148',
+            'image' => 'required|image|mimes:jpeg,png,jpg|max:5148',
             'date' => 'required|date',
         ], [
             'name.required' => 'Nama wajib diisi.',
             'description.required' => 'Deskripsi wajib diisi.',
             'image.required' => 'Gambar wajib diunggah.',
             'image.image' => 'File harus berupa gambar.',
-            // 'image.mimes' => 'Gambar harus berformat jpeg, png, atau jpg.',
+            'image.mimes' => 'Gambar harus berformat jpeg, png, atau jpg.',
             'image.max' => 'Ukuran gambar maksimal 5MB.',
             'date.required' => 'Tanggal wajib diisi.',
             'date.date' => 'Tanggal harus berupa format tanggal yang valid.',
